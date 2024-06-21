@@ -4,16 +4,25 @@
   "description": "This is a ebook api project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.ts"
   },
- 
   "keywords": [
     "rest",
     "api",
     "express",
-    "react",
-    "js"
+    "react"
   ],
   "author": "Rimjhim Lalwani",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.5.0",
+    "@types/node": "^20.14.7",
+    "eslint": "^9.5.0",
+    "globals": "^15.6.0",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2",
+    "typescript-eslint": "^7.13.1"
+  }
 }
