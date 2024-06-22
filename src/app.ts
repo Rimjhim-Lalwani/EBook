@@ -1,14 +1,14 @@
 import express from 'express'
+import globalErrorHandler from './middlewares/globalErrorHandler';
 const app=express();
 
-//Routes
-//HTTP methods : GET, POST, DELETE, PUT, PATCH
-app.get('/',(req,res)=>{
+app.get('/',(req,res,next)=>{
     res.json({message:"Welcome to ebook"});
+// to throw and create an error
+    // const error=createHttpError(400,"something went wrong!");
+    // throw error;
 })
 
-
-
-
+app.use(globalErrorHandler);
 
 export default app;
